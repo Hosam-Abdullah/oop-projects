@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1766995041 source:d:\hosam\(iti)\sw\atm project\atm\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<ctime>
+
