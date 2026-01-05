@@ -4,6 +4,10 @@
 
 ## 🎥 Demo Video
 
+
+Uploading demo.mp4…
+
+
 ▶️ This short demo (≈2 minutes) shows the complete workflow of the ATM system:
 
 - Card authentication
@@ -52,42 +56,42 @@ Account (Domain Model)
 
 ## Architectural Highlights
 
-ATM
+**ATM**
 Handles user interaction only (input/output, menus).
 Contains no business rules.
 
-BankSystem
+**BankSystem**
 Acts as the controller and orchestrates system logic.
 Manages authentication and money transfer between accounts.
 Contains no UI code.
 
-Account
+**Account**
 Represents a bank account and encapsulates all financial rules.
 Owns a Card for authentication and a list of Transaction objects.
 
-Card
+**Card**
 Responsible only for credential verification (card number & PIN).
 
-Transaction
+**Transaction**
 Represents an immutable record of an operation with timestamping.
 
 This design enforces Single Responsibility, Encapsulation, and Low Coupling, making the system easier to extend and maintain.
 
-Object-Oriented Design Principles Applied
+## Object-Oriented Design Principles Applied
 
-Encapsulation
+**Encapsulation**
 Internal data (balance, PIN, card number) is never accessed directly.
 
-Separation of Concerns
+**Separation of Concerns**
 UI logic is isolated from business logic.
 
-Composition over Inheritance
+**Composition over Inheritance**
 Accounts own Cards and Transactions.
 
-High Cohesion
+**High Cohesion**
 Each class has a focused and well-defined responsibility.
 
-Scalability-Oriented Design
+**Scalability-Oriented Design**
 The system can be extended to support:
 
 Persistent storage
