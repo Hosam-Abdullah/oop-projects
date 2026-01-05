@@ -16,7 +16,7 @@ Uploading demo.mp4…
 - Money transfer
 - Transaction history
 
-https://github.com/USERNAME/REPO/assets/XXXX/atm-demo.mp4
+https://youtu.be/v_oOQ2It-Us
 
 This project is a console-based ATM system implemented in C++ using Object-Oriented Programming (OOP) principles.
 It simulates core banking operations such as authentication, balance inquiry, cash withdrawal, deposit, money transfer, and transaction history management.
